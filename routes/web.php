@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomepageController;
@@ -32,12 +34,12 @@ Route::get('sponsorship', [PartnershipAndSponsorshipController::class, 'showSpon
 Route::get('about-us', [AboutUsController::class, 'index'])->name('about-us');
 Route::get('teams', [TeamController::class, 'index'])->name('teams');
 
+Route::post('register', [RegisterController::class, 'store']);
+Route::post('login', [LoginController::class, 'store']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
 });
