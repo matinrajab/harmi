@@ -36,7 +36,7 @@
                     <div class="about__Text2 text-justify">
                         <p hidden class="mb-30"> </p>
                         <p class="mb-30">
-                            {{ $sponsorship->description }}
+                            {!! nl2br($sponsorship->description) !!}
                         </p>
                     </div>
                 </div><!-- /.col-lg-6 -->
@@ -57,9 +57,9 @@
                     <div>
                         <div class="heading heading-light mb-30 text-justify">
                             <h3 class="heading__title mb-30">Benefits</h3>
-                            <p class="heading__desc">
-                                {{ $sponsorship->benefits }}
-                            </p>
+                            <div class="heading__desc2">
+                                {!! nl2br($sponsorship->benefits) !!}
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-30">

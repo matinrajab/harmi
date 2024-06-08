@@ -21,9 +21,9 @@
                             <div class="row">
                                 <div class="col-sm-12 text-justify">
                                     <h4 class="contact-panel__title">About Us </h4>
-                                    <p class="contact-panel__desc mb-30">
+                                    <div class="contact-panel__desc mb-30">
                                         {!! nl2br($aboutUs->about_us) !!}
-                                    </p>
+                                    </div>
                                 </div>
                             </div><!-- /.row -->
                         </form>

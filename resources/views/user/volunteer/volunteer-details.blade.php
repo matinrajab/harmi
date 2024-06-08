@@ -60,14 +60,14 @@
                         </nav>
                         <div class="tab-content mb-50 text-justify" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="Description">
-                                <p>{{ $openVolunteer->description }}</p>
+                                <p>{!! nl2br($openVolunteer->description) !!}</p>
                             </div><!-- /.desc-tab -->
                             <div class="tab-pane fade" id="Requirements">
-                                <p>{{ $openVolunteer->requirements }}
+                                <p>{!! nl2br($openVolunteer->requirements) !!}
                                 </p>
                             </div><!-- /.details-tab -->
                             <div class="tab-pane fade" id="ApplicationProcess">
-                                <p>{{ $openVolunteer->application_process }}</p>
+                                <p>{!! nl2br($openVolunteer->application_process) !!}</p>
                             </div><!-- /.reviews-tab -->
                         </div>
                     </div><!-- /.product-tabs -->

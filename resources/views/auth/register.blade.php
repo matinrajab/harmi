@@ -87,7 +87,7 @@
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>
-                            <a href="/" class="font-weight-bold" target="_blank">Renjana Mengabdi</a>
+                            <a href="/" class="font-weight-bold" target="_blank">HARMI</a>
                             Development By
                             <a href="https://punggawastudio.com/" class="font-weight-bold" target="_blank">Punggawa
                                 Studio</a>

@@ -77,7 +77,7 @@
                     <div class="col-12">
                         <h6 class="related__products-title text-center-xs mb-25">Gallery</h6>
                         <div class="row">
-                            @foreach ($event->galleries as $gallery)
+                            @foreach ($event->galleries->sortByDesc('id') as $gallery)
                                 <div class="col-sm-6 col-md-4 col-lg-4">
                                     <div class="member">
                                         <div class="member__img gallery-img">
