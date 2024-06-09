@@ -77,21 +77,21 @@
                         </div>
                         <div class="col-md-7">
                             <div class="form-group">
-                                <label for="fully_funded_regular_link" class="form-control-label">Fully Funded Regular
+                                <label for="fully_funded_link" class="form-control-label">Fully Funded
                                     Link</label>
-                                <input class="form-control" type="text" placeholder="Fully Funded Regular Link"
-                                    id="fully_funded_regular_link" required name="fully_funded_regular_link"
-                                    value="{{ $event->fully_funded_regular_link }}" onfocus="focused(this)"
+                                <input class="form-control" type="text" placeholder="Fully Funded Link"
+                                    id="fully_funded_link" required name="fully_funded_link"
+                                    value="{{ $event->fully_funded_link }}" onfocus="focused(this)"
                                     onfocusout="defocused(this)">
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="form-group">
-                                <label for="fully_funded_khusus_link" class="form-control-label">Fully Funded Khusus
+                                <label for="partial_funded_link" class="form-control-label">Partial Funded
                                     Link</label>
-                                <input class="form-control" type="text" placeholder="Fully Funded Khusus Link"
-                                    id="fully_funded_khusus_link" required name="fully_funded_khusus_link"
-                                    value="{{ $event->fully_funded_khusus_link }}" onfocus="focused(this)"
+                                <input class="form-control" type="text" placeholder="Partial Funded Link"
+                                    id="partial_funded_link" required name="partial_funded_link"
+                                    value="{{ $event->partial_funded_link }}" onfocus="focused(this)"
                                     onfocusout="defocused(this)">
                             </div>
                         </div>

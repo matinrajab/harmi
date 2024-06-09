@@ -21,8 +21,8 @@ return new class extends Migration
             $table->text('description');
             $table->string('image');
             $table->string('guide_book_link');
-            $table->string('fully_funded_regular_link');
-            $table->string('fully_funded_khusus_link');
+            $table->string('fully_funded_link');
+            $table->string('partial_funded_link');
             $table->string('self_funded_link');
             $table->timestamps();
         });

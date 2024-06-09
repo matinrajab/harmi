@@ -25,14 +25,13 @@ class HomepageRequest extends FormRequest
             'title' => ['required', 'string', 'max:255'],
             'subtitle' => ['required', 'string', 'max:255'],
             'about_us' => ['required', 'string'],
-            'about_us_image' => ['file', 'mimes:png,jpg,jpeg,webp,gif,svg', 'max:2048'],
             'vision' => ['required', 'string'],
             'cta_label' => ['required', 'string', 'max:255'],
             'cta_url' => ['required', 'string', 'max:255'],
-            'bidang_kesehatan' => ['required', 'string'],
-            'bidang_pendidikan' => ['required', 'string'],
-            'bidang_kepemudaan' => ['required', 'string'],
-            'bidang_lingkungan' => ['required', 'string'],
+            'one_day_care' => ['required', 'string'],
+            'one_day_action' => ['required', 'string'],
+            'one_day_share' => ['required', 'string'],
+            'one_day_trip' => ['required', 'string'],
         ];
     }
 }

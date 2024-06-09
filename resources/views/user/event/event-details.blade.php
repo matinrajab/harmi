@@ -26,7 +26,7 @@
     <section class="pt-120 pb-80">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="col-sm-12 col-md-12 col-lg-5">
                     <aside class="sidebar has-marign-right">
                         <div class="widget widget-member">
                             <div class="member mb-0">
@@ -46,11 +46,11 @@
                                 <ul class="list-unstyled mb-0">
                                     <li><a target="_blank" href="{{ $event->guide_book_link }}"><span>Guide Book</span><i
                                                 class="icon-arrow-right"></i></a></li>
-                                    <li><a target="_blank" href="{{ $event->fully_funded_regular_link }}"><span>Fully Funded
-                                                Regular</span><i class="icon-arrow-right"></i></a>
+                                    <li><a target="_blank" href="{{ $event->fully_funded_link }}"><span>Fully Funded
+                                                Registration</span><i class="icon-arrow-right"></i></a>
                                     </li>
-                                    <li><a target="_blank" href="{{ $event->fully_funded_khusus_link }}"><span>Fully Funded
-                                                Khusus</span><i class="icon-arrow-right"></i></a>
+                                    <li><a target="_blank" href="{{ $event->partial_funded_link }}"><span>Partial Funded
+                                                Registration</span><i class="icon-arrow-right"></i></a>
                                     </li>
                                     <li><a target="_blank" href="{{ $event->self_funded_link }}"><span>Self Funded
                                                 Registration</span><i class="icon-arrow-right"></i></a>
@@ -60,7 +60,7 @@
                         </div><!-- /.widget-services -->
                     </aside><!-- /.sidebar -->
                 </div><!-- /.col-lg-4 -->
-                <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="col-sm-12 col-md-12 col-lg-7">
                     <div class="text-block mb-50">
                         <h5 class="text-block__title">Event Description</h5>
                         <p class="text-block__desc mb-20 text-justify">{!! nl2br($event->description) !!}</p>

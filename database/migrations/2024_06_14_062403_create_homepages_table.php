@@ -16,12 +16,11 @@ return new class extends Migration
             $table->string('title');
             $table->string('subtitle');
             $table->text('about_us');
-            $table->string('about_us_image');
             $table->text('vision');
-            $table->text('bidang_kesehatan');
-            $table->text('bidang_pendidikan');
-            $table->text('bidang_kepemudaan');
-            $table->text('bidang_lingkungan');
+            $table->text('one_day_care');
+            $table->text('one_day_action');
+            $table->text('one_day_share');
+            $table->text('one_day_trip');
             $table->string('cta_label');
             $table->string('cta_url');
             $table->timestamps();

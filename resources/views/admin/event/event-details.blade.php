@@ -63,14 +63,14 @@
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
-                            <h6>Fully Funded Regular Link</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $event->fully_funded_regular_link }} </p>
+                            <h6>Fully Funded Link</h6>
+                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $event->fully_funded_link }} </p>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
-                            <h6>Fully Funded Khusus Link</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $event->fully_funded_khusus_link }} </p>
+                            <h6>Partial Funded Link</h6>
+                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $event->partial_funded_link }} </p>
                         </div>
                     </div>
                     <div class="col-md-8">

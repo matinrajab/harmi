@@ -13,10 +13,6 @@
                     <div class="col-6 d-flex align-items-center">
                         <h6 class="mb-0">Team</h6>
                     </div>
-                    <div class="col-6 text-end">
-                        <a href="{{ route('admin.open-volunteer.index') }}" class="btn btn-outline-primary btn-sm mb-0">Edit
-                            Urutan</a>
-                    </div>
                 </div>
             </div>
             <div class="card-body p-3">

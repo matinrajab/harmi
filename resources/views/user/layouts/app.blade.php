@@ -4,9 +4,10 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Medcity - Medical Healthcare HTML5 Template">
+    <meta name="description" content="Health Association of Relawan Muda Indonesia">
     <link href="{{ asset('user/assets') }}/images/favicon/favicon.png" rel="icon">
     <title>@yield('title', 'HARMI')</title>
 
@@ -25,6 +26,54 @@
         Header
     =========================== -->
         <header class="header header-layout2">
+            <div class="header-topbar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
+                                    <li>
+                                        <button class="miniPopup-emergency-trigger" type="button">24/7
+                                            Emergency</button>
+                                        <div id="miniPopup-emergency" class="miniPopup miniPopup-emergency text-center">
+                                            <div class="emergency__icon">
+                                                <i class="icon-call3"></i>
+                                            </div>
+                                            <a href="tel:{{ $contact->phone_number }}" class="phone__number">
+                                                <i class="icon-phone"></i> <span>{{ $contact->phone_number }}</span>
+                                            </a>
+                                            <p>Please feel free to contact our friendly reception staff with any general
+                                                enquiry.
+                                            </p>
+                                            <a href="https://wa.me/{{ $contact->phone_number }}"
+                                                class="btn btn__secondary btn__link btn__block">
+                                                <span>Contact Us</span> <i class="icon-arrow-right"></i>
+                                            </a>
+                                        </div><!-- /.miniPopup-emergency -->
+                                    </li>
+                                    <li>
+                                        <i class="icon-phone"></i><a>Emergency Line: {{ $contact->phone_number }}</a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-location"></i><a>Location: {{ $contact->address }}</a>
+                                    </li>
+                                </ul><!-- /.contact__list -->
+                                <div class="d-flex">
+                                    <ul class="social-icons list-unstyled mb-0 mr-30">
+                                        <li><a href="mailto:{{ $contact->email }}"><i class="fa fa-envelope"></i></a>
+                                        </li>
+                                        <li><a href="https://wa.me/{{ $contact->phone_number }}"><i
+                                                    class="fa fa-phone"></i></a></li>
+                                        <li><a href="https://www.instagram.com/{{ $contact->instagram }}"><i
+                                                    class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </ul><!-- /.social-icons -->
+                                </div>
+                            </div>
+                        </div><!-- /.col-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.header-top -->
             <nav class="navbar navbar-expand-lg sticky-navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{{ route('homepage') }}">

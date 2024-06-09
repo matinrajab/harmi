@@ -33,15 +33,6 @@
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
-                            <h6>About Us Image</h6>
-                            <div class="col-md-6 d-block shadow-xl border-radius-xl mb-4">
-                                <img src="{{ asset('files') }}/homepage/{{ $home->about_us_image }}" alt="img-blur-shadow"
-                                    class="img-fluid shadow border-radius-xl">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="form-group">
                             <h6>Vision</h6>
                             <p class="text-gradient text-dark mb-2 text-sm">{!! nl2br($home->vision) !!}</p>
                         </div>
@@ -72,26 +63,26 @@
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
-                            <h6>Bidang Kesehatan</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->bidang_kesehatan }} </p>
+                            <h6>One Day Care</h6>
+                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->one_day_care }} </p>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
-                            <h6>Bidang Pendidikan</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->bidang_pendidikan }} </p>
+                            <h6>One Day Action</h6>
+                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->one_day_action }} </p>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
-                            <h6>Bidang Kepemudaan</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->bidang_kepemudaan }} </p>
+                            <h6>One Day Share</h6>
+                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->one_day_share }} </p>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
-                            <h6>Bidang Lingkungan</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->bidang_lingkungan }} </p>
+                            <h6>One Day Trip</h6>
+                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->one_day_trip }} </p>
                         </div>
                     </div>
                     <div class="d-flex justify-content-end">

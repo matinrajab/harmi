@@ -7,7 +7,7 @@
 @section('content')
     <section class="google-map py-0">
         <iframe frameborder="0" height="500" width="100%"
-            src="https://maps.google.com/maps?q=Jln. Balai Desa, Desa Manis Dusun IV, Kec. Pulau Rakyat, Kab. Asahan. Sumatera Utara, Indonesia, 21273&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"></iframe>
+            src="https://maps.google.com/maps?q={{ $contact->address }}&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"></iframe>
     </section><!-- /.GoogleMap -->
 
     <section class="contact-layout1 pt-0 mt--100 pb-30">

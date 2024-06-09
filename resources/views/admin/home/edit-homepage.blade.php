@@ -38,18 +38,6 @@
                                 <textarea class="form-control" id="about_us" rows="10" placeholder="About Us" name="about_us" required>{{ $home->about_us }}</textarea>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="about_us_image" class="form-control-label">About Us Image (max: 2 mb)</label>
-                            <div class="col-md-6 d-block shadow-xl border-radius-xl mb-4">
-                                <img src="{{ asset('files') }}/homepage/{{ $home->about_us_image }}" alt="img-blur-shadow"
-                                    class="img-fluid shadow border-radius-xl">
-                            </div>
-                            <div class="col-md-7">
-                                <input class="form-control" type="file" id="about_us_image" name="about_us_image">
-                                <p class="text-gradient text-dark mb-2 text-sm">Abaikan jika tidak ingin mengubah gambar
-                                </p>
-                            </div>
-                        </div>
                         <div class="col-md-7">
                             <div class="form-group">
                                 <label for="vision">Vision</label>
@@ -100,34 +88,34 @@
                         </div>
                         <div class="col-md-7">
                             <div class="form-group">
-                                <label for="bidang_kesehatan" class="form-control-label">Bidang Kesehatan</label>
-                                <input class="form-control" type="text" value="{{ $home->bidang_kesehatan }}"
-                                    placeholder="Bidang Kesehatan" id="bidang_kesehatan" name="bidang_kesehatan" required
+                                <label for="one_day_care" class="form-control-label">One Day Care</label>
+                                <input class="form-control" type="text" value="{{ $home->one_day_care }}"
+                                    placeholder="One Day Care" id="one_day_care" name="one_day_care" required
                                     onfocus="focused(this)" onfocusout="defocused(this)">
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="form-group">
-                                <label for="bidang_pendidikan" class="form-control-label">Bidang Pedidikan</label>
-                                <input class="form-control" type="text" value="{{ $home->bidang_pendidikan }}"
-                                    placeholder="Bidang Pedidikan" id="bidang_pendidikan" name="bidang_pendidikan"
-                                    required onfocus="focused(this)" onfocusout="defocused(this)">
+                                <label for="one_day_action" class="form-control-label">One Day Action</label>
+                                <input class="form-control" type="text" value="{{ $home->one_day_action }}"
+                                    placeholder="One Day Action" id="one_day_action" name="one_day_action" required
+                                    onfocus="focused(this)" onfocusout="defocused(this)">
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="form-group">
-                                <label for="bidang_kepemudaan" class="form-control-label">Bidang Kepemudaan</label>
-                                <input class="form-control" type="text" value="{{ $home->bidang_kepemudaan }}"
-                                    placeholder="Bidang Kepemudaan" id="bidang_kepemudaan" name="bidang_kepemudaan"
-                                    required onfocus="focused(this)" onfocusout="defocused(this)">
+                                <label for="one_day_share" class="form-control-label">One Day Share</label>
+                                <input class="form-control" type="text" value="{{ $home->one_day_share }}"
+                                    placeholder="One Day Share" id="one_day_share" name="one_day_share" required
+                                    onfocus="focused(this)" onfocusout="defocused(this)">
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="form-group">
-                                <label for="bidang_lingkungan" class="form-control-label">Bidang Lingkungan</label>
-                                <input class="form-control" type="text" value="{{ $home->bidang_lingkungan }}"
-                                    placeholder="Bidang Lingkungan" id="bidang_lingkungan" name="bidang_lingkungan"
-                                    required onfocus="focused(this)" onfocusout="defocused(this)">
+                                <label for="one_day_trip" class="form-control-label">One Day Trip</label>
+                                <input class="form-control" type="text" value="{{ $home->one_day_trip }}"
+                                    placeholder="One Day Trip" id="one_day_trip" name="one_day_trip" required
+                                    onfocus="focused(this)" onfocusout="defocused(this)">
                             </div>
                         </div>
                         <div class="d-flex justify-content-end">
