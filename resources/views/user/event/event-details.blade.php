@@ -63,7 +63,7 @@
                 <div class="col-sm-12 col-md-12 col-lg-7">
                     <div class="text-block mb-50">
                         <h5 class="text-block__title">Event Description</h5>
-                        <p class="text-block__desc mb-20 text-justify">{!! nl2br($event->description) !!}</p>
+                        <div class="text-block__desc mb-20 text-justify">{!! nl2br($event->description) !!}</div>
                     </div><!-- /.text-block -->
                 </div><!-- /.col-lg-8 -->
             </div><!-- /.row -->

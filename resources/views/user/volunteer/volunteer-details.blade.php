@@ -6,16 +6,16 @@
 @extends('user.layouts.app')
 
 @section('content')
-    <section class="page-title page-title-layout5 bg-overlay">
-        <div class="bg-img"><img src="{{ asset('user/assets') }}/images/page-titles/8.jpg" alt="background"></div>
+    <section class="page-title page-title-layout5">
+        <div class="bg-img"><img src="{{ asset('user/assets') }}/images/backgrounds/6.jpg" alt="background"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="pagetitle__heading">Volunteer Project details</h1>
+                    <h1 class="pagetitle__heading">Harmi Project details</h1>
                     <nav>
                         <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Volunteer Project</li>
+                            <li class="breadcrumb-item active" aria-current="page">Harmi Project</li>
                         </ol>
                     </nav>
                 </div><!-- /.col-12 -->

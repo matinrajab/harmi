@@ -33,25 +33,6 @@
                             <div class="d-flex align-items-center justify-content-between">
                                 <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
                                     <li>
-                                        <button class="miniPopup-emergency-trigger" type="button">24/7
-                                            Emergency</button>
-                                        <div id="miniPopup-emergency" class="miniPopup miniPopup-emergency text-center">
-                                            <div class="emergency__icon">
-                                                <i class="icon-call3"></i>
-                                            </div>
-                                            <a href="tel:{{ $contact->phone_number }}" class="phone__number">
-                                                <i class="icon-phone"></i> <span>{{ $contact->phone_number }}</span>
-                                            </a>
-                                            <p>Please feel free to contact our friendly reception staff with any general
-                                                enquiry.
-                                            </p>
-                                            <a href="https://wa.me/{{ $contact->phone_number }}"
-                                                class="btn btn__secondary btn__link btn__block">
-                                                <span>Contact Us</span> <i class="icon-arrow-right"></i>
-                                            </a>
-                                        </div><!-- /.miniPopup-emergency -->
-                                    </li>
-                                    <li>
                                         <i class="icon-phone"></i><a>Emergency Line: {{ $contact->phone_number }}</a>
                                     </li>
                                     <li>
@@ -91,7 +72,7 @@
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
                                 <a href="{{ route('open-volunteers.index') }}"
-                                    class="nav__item-link {{ isset($volunteer_page) ? 'active' : '' }}">volunteer
+                                    class="nav__item-link {{ isset($volunteer_page) ? 'active' : '' }}">Harmi
                                     Project</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
@@ -181,7 +162,7 @@
                                 <nav>
                                     <ul class="list-unstyled">
                                         <li><a href="{{ route('homepage') }}">Home</a></li>
-                                        <li><a href="{{ route('open-volunteers.index') }}">Volunteer Projects</a></li>
+                                        <li><a href="{{ route('open-volunteers.index') }}">Harmi Project</a></li>
                                         <li><a href="{{ route('events.index') }}">Latest Events</a></li>
                                         <li><a href="{{ route('blogs.index') }}">Latest Blogs</a></li>
                                         <li><a href="{{ route('about-us') }}">About Us</a></li>

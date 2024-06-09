@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class HomepageRequest extends FormRequest
+class SlideBannerRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,12 +22,11 @@ class HomepageRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'about_us' => ['required', 'string'],
-            'vision' => ['required', 'string'],
-            'one_day_care' => ['required', 'string'],
-            'one_day_action' => ['required', 'string'],
-            'one_day_share' => ['required', 'string'],
-            'one_day_trip' => ['required', 'string'],
+            'title' => ['required', 'string', 'max:255'],
+            'subtitle' => ['required', 'string', 'max:255'],
+            'cta_label' => ['required', 'string', 'max:255'],
+            'cta_url' => ['required', 'string', 'max:255'],
+            'image' => [$this->isMethod('post') ? 'required' : 'nullable', 'file', 'mimes:png,jpg,jpeg,webp,gif,svg', 'max:2048'],
         ];
     }
 }

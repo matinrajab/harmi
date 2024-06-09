@@ -7,27 +7,29 @@
 
 @section('content')
     <section class="slider mb-100">
-        <div class="slick-carousel m-slides-0">
-            <div class="slide-item align-v-h">
-                <div class="bg-img"><img src="{{ asset('user/assets') }}/images/sliders/5.jpg" alt="slide img">
-                </div>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
-                            <div class="slide__content">
-                                <h2 class="slide__title">{{ $home->title }}</h2>
-                                <p class="slide__desc">{{ $home->subtitle }}</p>
-                                <div class="d-flex flex-wrap align-items-center">
-                                    <a href="{{ $home->cta_url }}" class="btn btn__primary btn__rounded mr-30">
-                                        <span>{{ $home->cta_label }}</span>
-                                        <i class="icon-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div><!-- /.slide-content -->
-                        </div><!-- /.col-xl-7 -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.slide-item -->
+        <div class="slick-carousel m-slides-0"
+            data-slick='{"slidesToShow": 1, "arrows": true, "dots": false, "speed": 700,"fade": true,"cssEase": "linear"}'>
+            @foreach ($banner as $item)
+                <div class="slide-item align-v-h">
+                    <div class="bg-img"><img src="{{ asset('files') }}/slide_banner/{{ $item->image }}" alt="slide img"></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                                <div class="slide__content">
+                                    <h2 class="slide__title">{{ $item->title }}</h2>
+                                    <p class="slide__desc">{{ $item->subtitle }}</p>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <a href="{{ $item->cta_url }}" class="btn btn__primary btn__rounded mr-30">
+                                            <span>{{ $item->cta_label }}</span>
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div><!-- /.slide-content -->
+                            </div><!-- /.col-xl-7 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.slide-item -->
+            @endforeach
         </div><!-- /.carousel -->
     </section><!-- /.slider -->
 

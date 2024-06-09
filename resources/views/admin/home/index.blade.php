@@ -15,18 +15,6 @@
                 <div class="card-body pt-4 p-3">
                     <div class="col-md-8">
                         <div class="form-group">
-                            <h6>Title</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->title }} </p>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <h6>Subtitle</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->subtitle }} </p>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="form-group">
                             <h6>About Us</h6>
                             <p class="text-gradient text-dark mb-2 text-sm"> {!! nl2br($home->about_us) !!} </p>
                         </div>
@@ -47,18 +35,6 @@
                                     </li>
                                 @endforeach
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <h6>CTA Label</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->cta_label }} </p>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <h6>CTA URL</h6>
-                            <p class="text-gradient text-dark mb-2 text-sm"> {{ $home->cta_url }} </p>
                         </div>
                     </div>
                     <div class="col-md-8">

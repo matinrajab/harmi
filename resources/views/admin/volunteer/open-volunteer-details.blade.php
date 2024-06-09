@@ -1,7 +1,7 @@
 @php
     use App\Helpers\DateFormatter;
     $admin_open_volunteer_page = true;
-    $page_name = 'Volunteer Project';
+    $page_name = 'Harmi Project';
 @endphp
 
 @extends('admin.layouts.app')
@@ -11,7 +11,7 @@
         <div class="col-12">
             <div class="card mb-4">
                 <div class="card-header pb-0 px-3">
-                    <h5>Volunteer Project Details</h5>
+                    <h5>Harmi Project Details</h5>
                 </div>
                 <div class="card-body pt-4 p-3">
                     <div class="col-md-8">

@@ -90,6 +90,16 @@ Route::middleware([
             Route::get('delete/{id}', [AdminTestimonialController::class, 'destroy'])->name('destroy');
         });
 
+        Route::name('slide-banner.')->prefix('slide-banner')->group(function () {
+            Route::get('/', [AdminSlideBannerController::class, 'index'])->name('index');
+            Route::get('{id}', [AdminSlideBannerController::class, 'show'])->name('show');
+            Route::get('add', [AdminSlideBannerController::class, 'create'])->name('create');
+            Route::post('store', [AdminSlideBannerController::class, 'store'])->name('store');
+            Route::get('edit/{id}', [AdminSlideBannerController::class, 'edit'])->name('edit');
+            Route::put('update/{id}', [AdminSlideBannerController::class, 'update'])->name('update');
+            Route::get('delete/{id}', [AdminSlideBannerController::class, 'destroy'])->name('destroy');
+        });
+
         Route::name('open-volunteer.')->prefix('open-volunteer')->group(function () {
             Route::get('/', [AdminOpenVolunteerController::class, 'index'])->name('index');
             Route::get('add', [AdminOpenVolunteerController::class, 'create'])->name('create');

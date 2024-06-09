@@ -5,8 +5,8 @@
 @extends('user.layouts.app')
 
 @section('content')
-    <section class="page-title page-title-layout5 bg-overlay">
-        <div class="bg-img"><img src="{{ asset('user/assets') }}/images/page-titles/8.jpg" alt="background"></div>
+    <section class="page-title page-title-layout5">
+        <div class="bg-img"><img src="{{ asset('user/assets') }}/images/backgrounds/6.jpg" alt="background"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12">

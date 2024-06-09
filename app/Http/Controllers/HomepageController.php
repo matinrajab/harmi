@@ -16,11 +16,12 @@ class HomepageController extends Controller
 {
     public function index()
     {
+        $banner = SlideBanner::orderByDesc('id')->get();
         $home = Homepage::first();
         $missions = Mission::all();
         $openVolunteers = OpenVolunteer::orderByDesc('id')->limit(3)->get();
         $events = Event::orderByDesc('id')->limit(3)->get();
         $testimonials = Testimonial::orderByDesc('id')->get();
-        return view('user.home.index', compact('home', 'missions', 'openVolunteers', 'events', 'testimonials'));
+        return view('user.home.index', compact('banner', 'home', 'missions', 'openVolunteers', 'events', 'testimonials'));
     }
 }

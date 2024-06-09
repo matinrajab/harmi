@@ -1,6 +1,6 @@
 @php
     $admin_open_volunteer_page = true;
-    $page_name = 'Volunteer Project';
+    $page_name = 'Harmi Project';
 @endphp
 
 @extends('admin.layouts.app')
@@ -10,7 +10,7 @@
         <div class="col-12">
             <div class="card mb-4">
                 <div class="card-header pb-0 px-3">
-                    <h6>Edit Volunteer Project</h6>
+                    <h6>Edit Harmi Project</h6>
                 </div>
                 <div class="card-body pt-4 p-3">
                     <form action="{{ route('admin.open-volunteer.update', $openVolunteer->id) }}" method="POST"

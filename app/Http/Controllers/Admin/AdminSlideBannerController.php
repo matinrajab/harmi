@@ -25,6 +25,12 @@ class AdminSlideBannerController extends Controller
         return view('admin.slide_banner.index', ['banners' => $banners]);
     }
 
+    public function show(string $id)
+    {
+        $banner = SlideBanner::findOrFail($id);
+        return view('admin.slide_banner.banner-details', ['banner' => $banner]);
+    }
+
     public function create()
     {
         return view('admin.slide_banner.add-banner');
@@ -38,7 +44,7 @@ class AdminSlideBannerController extends Controller
         $data = $this->fileService->prepareData($request, $image);
         SlideBanner::create($data);
 
-        return redirect('/admin/slide-banner');
+        return redirect(route('admin.slide-banner.index'));
     }
 
     public function edit(string $id)
@@ -55,7 +61,7 @@ class AdminSlideBannerController extends Controller
         $banner->image = $this->fileService->handleFileUpdate($file, $banner->image, self::DIR);
         $banner->update($request->except(['image']));
 
-        return redirect('/admin/slide-banner');
+        return redirect(route('admin.slide-banner.index'));
     }
 
     public function destroy(string $id)
@@ -65,6 +71,6 @@ class AdminSlideBannerController extends Controller
         File::delete(self::DIR . $banner->image);
         $banner->delete();
 
-        return redirect()->back();
+        return redirect(route('admin.slide-banner.index'));
     }
 }

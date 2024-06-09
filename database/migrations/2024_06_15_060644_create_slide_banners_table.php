@@ -11,14 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('homepages', function (Blueprint $table) {
+        Schema::create('slide_banners', function (Blueprint $table) {
             $table->id();
-            $table->text('about_us');
-            $table->text('vision');
-            $table->text('one_day_care');
-            $table->text('one_day_action');
-            $table->text('one_day_share');
-            $table->text('one_day_trip');
+            $table->string('image');
+            $table->string('title');
+            $table->string('subtitle');
+            $table->string('cta_label');
+            $table->string('cta_url');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('homepages');
+        Schema::dropIfExists('slide_banners');
     }
 };

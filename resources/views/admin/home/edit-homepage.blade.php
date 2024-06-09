@@ -18,22 +18,6 @@
                         @method('PUT')
                         <div class="col-md-7">
                             <div class="form-group">
-                                <label for="title" class="form-control-label">Title</label>
-                                <input class="form-control" type="text" value="{{ $home->title }}" placeholder="Title"
-                                    id="title" name="title" required onfocus="focused(this)"
-                                    onfocusout="defocused(this)">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="form-group">
-                                <label for="subtitle" class="form-control-label">Subtitle</label>
-                                <input class="form-control" type="text" value="{{ $home->subtitle }}"
-                                    placeholder="Subtitle" id="subtitle" name="subtitle" required onfocus="focused(this)"
-                                    onfocusout="defocused(this)">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="form-group">
                                 <label for="about_us">About Us</label>
                                 <textarea class="form-control" id="about_us" rows="10" placeholder="About Us" name="about_us" required>{{ $home->about_us }}</textarea>
                             </div>
@@ -68,22 +52,6 @@
                                         class="btn bg-gradient-dark btn-md mt-2 mb-2">Add
                                         Mission</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="form-group">
-                                <label for="cta_label" class="form-control-label">CTA Label</label>
-                                <input class="form-control" type="text" value="{{ $home->cta_label }}"
-                                    placeholder="CTA Label" id="cta_label" name="cta_label" required onfocus="focused(this)"
-                                    onfocusout="defocused(this)">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="form-group">
-                                <label for="cta_url" class="form-control-label">CTA URL</label>
-                                <input class="form-control" type="text" value="{{ $home->cta_url }}"
-                                    placeholder="CTA URL" id="cta_url" name="cta_url" required onfocus="focused(this)"
-                                    onfocusout="defocused(this)">
                             </div>
                         </div>
                         <div class="col-md-7">

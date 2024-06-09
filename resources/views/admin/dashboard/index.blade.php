@@ -127,7 +127,7 @@
                 <div class="card-header pb-0 p-3">
                     <div class="row">
                         <div class="col-6 d-flex align-items-center">
-                            <h6 class="mb-0">Volunteer Projects</h6>
+                            <h6 class="mb-0">Harmi Projects</h6>
                         </div>
                         <div class="col-6 text-end">
                             <a href="{{ route('admin.open-volunteer.index') }}"
